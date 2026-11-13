@@ -1,0 +1,6 @@
+SnowDesk.app/
+build.log
+debug_windows*
+windows_debug.txt
+.DS_Store
+__pycache__/
