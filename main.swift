@@ -1593,6 +1593,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
     var window: NSWindow!
     var view: SnowView!
     var statusItem: NSStatusItem!
+    var tour: DemoTour?
     var timer: Timer?
     var snowItem: NSMenuItem!
     var shovelItem: NSMenuItem!
@@ -1759,6 +1760,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
         // рисуем 30 раз в секунду и только там, где что-то меняется
         if frameCount % 2 == 0 { view.invalidateDirty() }
         if frameCount % 15 == 0 { syncPrefs() }
+        if frameCount % 30 == 0 { DemoTour.check(self) }
         if frameCount % 30 == 0 {
             let p = view.prefs
             snowfall.update(size: view.bounds.size, amount: CGFloat(p.fallAmount),

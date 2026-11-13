@@ -16,7 +16,7 @@ APP="SnowDesk.app"
 echo "❄️  Собираю приложение…"
 rm -rf "$APP"
 mkdir -p "$APP/Contents/MacOS"
-swiftc -O -swift-version 5 main.swift Prefs.swift Snowfall.swift World.swift Autumn.swift Summer.swift Spring.swift -o "$APP/Contents/MacOS/SnowDesk" -framework AppKit -framework SwiftUI
+swiftc -O -swift-version 5 main.swift Prefs.swift Snowfall.swift World.swift Autumn.swift Summer.swift Spring.swift Tour.swift -o "$APP/Contents/MacOS/SnowDesk" -framework AppKit -framework SwiftUI
 
 cat > "$APP/Contents/Info.plist" <<PLIST
 <?xml version="1.0" encoding="UTF-8"?>

@@ -7,6 +7,8 @@
 Снег копится на окнах и у Dock, весной тает, летом цветёт, осенью облетает.
 </p>
 
+<p align="center"><img src="docs/demo.gif" width="800" alt="SnowDesk в работе"></p>
+
 <p align="center">
 <img src="docs/wallpaper_winter.jpg" width="49%"> <img src="docs/wallpaper_spring.jpg" width="49%"><br>
 <img src="docs/wallpaper_summer.jpg" width="49%"> <img src="docs/wallpaper_autumn.jpg" width="49%">
